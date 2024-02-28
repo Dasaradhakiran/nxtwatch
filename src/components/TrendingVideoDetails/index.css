@@ -1,0 +1,53 @@
+.trending-video-cont {
+  list-style-type: none;
+}
+.trending-video-link {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-right: 50px;
+  text-decoration: none;
+}
+
+.trending-video-image {
+  width: 350px;
+  height: 200px;
+}
+
+.trending-video-sub-cont {
+  margin-left: 20px;
+  margin-top: 0px;
+}
+
+.trending-video-name-text {
+  font-family: 'Roboto';
+  color: #616e7c;
+  font-size: 14px;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.trending-video-bottom-cont {
+  display: flex;
+  align-items: center;
+}
+
+.trending-video-bottom-text {
+  font-family: 'Roboto';
+  color: #616e7c;
+  font-size: 14px;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-right: 10px;
+}
+
+.trending-video-dot-text {
+  font-family: 'Roboto';
+  color: #616e7c;
+  font-size: 25px;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-right: 10px;
+}

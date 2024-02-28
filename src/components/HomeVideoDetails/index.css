@@ -1,0 +1,30 @@
+.home-Videos-li-elem {
+  list-style-type: none;
+  width: 250px;
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
+
+.home-Videos-image {
+  width: 250px;
+}
+
+.home-Videos-sub-cont {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+.home-Videos-logo {
+  width: 50px;
+  margin-right: 8px;
+}
+.home-Videos-date-cont {
+  display: flex;
+  align-items: center;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.home-Videos-link {
+  text-decoration: none;
+}

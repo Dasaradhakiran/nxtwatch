@@ -1,0 +1,22 @@
+.gaming-cont {
+  display: flex;
+  height: 91vh;
+}
+.gaming-main-cont {
+  background-color: #f9f9f9;
+  width: 90vw;
+  overflow: auto;
+}
+.gaming-main-cont-dark {
+  background-color: #0f0f0f;
+}
+
+.gaming-icon {
+  font-size: 33px;
+  color: #ff0000;
+}
+
+.gaming-ul-elem {
+  display: flex;
+  flex-wrap: wrap;
+}

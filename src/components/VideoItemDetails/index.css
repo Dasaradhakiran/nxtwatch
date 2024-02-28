@@ -1,0 +1,113 @@
+.video-item-details-cont {
+  display: flex;
+}
+.video-item-details-sub-cont {
+  padding: 20px;
+  padding-right: 50px;
+  padding-left: 30px;
+  height: 91vh;
+  width: 90vw;
+  overflow: auto;
+  background-color: #f9f9f9;
+}
+.video-item-details-sub-cont-dark {
+  background-color: #0f0f0f;
+}
+
+.video-item-middle-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #64748b;
+}
+
+.video-item-date-cont {
+  display: flex;
+  align-items: center;
+}
+
+.video-item-date-text {
+  font-family: 'Roboto';
+  color: #616e7c;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.video-item-dot-text {
+  font-family: 'Roboto';
+  color: #616e7c;
+  font-size: 25px;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.video-item-icon {
+  color: #64748b;
+  font-size: 20px;
+  margin-right: 5px;
+}
+.video-item-icon-text {
+  font-family: 'Roboto';
+  color: #64748b;
+  font-size: 14px;
+}
+
+.video-item-icon-main-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.video-item-icon-cont {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  width: 80px;
+  cursor: pointer;
+  outline: none;
+  border: 0px;
+}
+
+.video-item-title {
+  font-family: 'Roboto';
+  color: #1e293b;
+  font-size: 17px;
+  margin-top: 15px;
+}
+
+.video-item-bottom-cont {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.video-item-profile {
+  width: 60px;
+  margin-right: 20px;
+}
+.video-item-name {
+  font-family: 'Roboto';
+  color: #000000;
+  font-size: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.video-item-subscriber {
+  font-family: 'Roboto';
+  color: #616e7c;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.video-item-description {
+  font-family: 'Roboto';
+  color: #212121;
+  font-size: 14px;
+}
+
+.video-item-dark-text {
+  color: #ffffff;
+}
+
+.video-item-active-state {
+  color: #2563eb;
+}

@@ -1,0 +1,26 @@
+.error-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 70vw;
+}
+.error-image {
+  width: 300px;
+}
+.error-button {
+  border: 0px;
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #4f46e5;
+  font-family: 'Roboto';
+  font-size: 13px;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

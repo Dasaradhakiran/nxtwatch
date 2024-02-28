@@ -1,0 +1,107 @@
+.header-nav-elem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.header-nav-elem-dark {
+  background-color: #231f20;
+}
+
+.header-sub-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 128px;
+}
+
+.header-img-logo {
+  width: 9vw;
+}
+.header-profile {
+  width: 2vw;
+}
+
+.header-theme-icon {
+  font-size: 19px;
+}
+.header-dark-theme-icon {
+  font-size: 19px;
+  color: #ffffff;
+}
+
+.header-button {
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #3b82f6;
+  background-color: transparent;
+  font-family: 'Roboto';
+  font-size: 13px;
+  color: #3b82f6;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header-button-dark {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.header-theme-button {
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  border: 0px;
+  padding: 0px;
+}
+
+.header-popup-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-popup-text {
+  font-family: 'Roboto';
+  color: #00306e;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.header-popup-cancel-btn {
+  width: 90px;
+  height: 28px;
+  background-color: transparent;
+  border: 1px solid #383838;
+  font-family: 'Roboto';
+  color: #383838;
+  font-size: 14px;
+  margin-right: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+.header-popup-confirm-btn {
+  width: 90px;
+  height: 28px;
+  background-color: #3b82f6;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 14px;
+  margin-left: 15px;
+  border-radius: 5px;
+  border: 0px;
+  cursor: pointer;
+  outline: none;
+}
+
+.header-popup-text-dark {
+  color: #f8fafc;
+}
+.header-popup-cancel-btn-dark {
+  color: #f1f5f9;
+  border-color: #f1f5f9;
+}

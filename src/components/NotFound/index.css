@@ -1,0 +1,19 @@
+.not-found-cont {
+  display: flex;
+}
+.not-found-sub-cont {
+  background-color: #f9f9f9;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  padding-top: 30px;
+}
+.not-found-sub-cont-dark {
+  background-color: #0f0f0f;
+}
+
+.not-found-image {
+  width: 400px;
+}

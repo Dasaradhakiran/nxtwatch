@@ -1,0 +1,110 @@
+.login-main-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login-main-cont-dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #181818;
+}
+
+.login-sub-cont {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 4px 4px 25px 10px #e2e8f0;
+  border-radius: 10px;
+  width: 30vw;
+  height: 55vh;
+}
+.login-sub-cont-dark {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  width: 30vw;
+  height: 55vh;
+  background-color: #0f0f0f;
+}
+
+.login-form-elem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 25vw;
+}
+
+.login-logo {
+  width: 13vw;
+  margin-bottom: 30px;
+}
+
+.login-label-text {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #475569;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.login-label-text-dark {
+  color: #f9f9f9;
+}
+
+.login-input-elem {
+  border: 1px solid #e2e8f0;
+  width: 25vw;
+  height: 5vh;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-family: 'Roboto';
+  font-size: 13px;
+  color: #475569;
+  outline: none;
+}
+.login-input-elem-dark {
+  border: 1px solid #475569;
+  background-color: transparent;
+  color: #f1f5f9;
+}
+
+.login-checkbox-label {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #1e293b;
+  margin-left: 5px;
+}
+.login-checkbox-label-dark {
+  color: #f8fafc;
+}
+.login-checkbox-cont {
+  display: flex;
+  align-items: center;
+}
+
+.login-button {
+  width: 25vw;
+  height: 5vh;
+  border: 0px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  background-color: #3b82f6;
+  font-family: 'Roboto';
+  font-size: 13px;
+  color: #ffffff;
+  margin-top: 17px;
+}
+
+.login-error {
+  font-family: 'Roboto';
+  font-size: 11px;
+  color: #ff0b37;
+  margin-top: 2px;
+}

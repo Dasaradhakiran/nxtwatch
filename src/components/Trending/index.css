@@ -1,0 +1,17 @@
+.trending-cont {
+  display: flex;
+  height: 91vh;
+}
+.trending-main-cont {
+  background-color: #f9f9f9;
+  width: 90vw;
+  overflow: auto;
+}
+.trending-main-cont-dark {
+  background-color: #0f0f0f;
+}
+
+.trending-icon {
+  font-size: 33px;
+  color: #ff0000;
+}

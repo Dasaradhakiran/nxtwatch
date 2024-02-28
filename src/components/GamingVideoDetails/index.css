@@ -1,0 +1,24 @@
+.game-video-li-elem {
+  list-style-type: none;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+.game-video-image {
+  width: 200px;
+  height: 300px;
+}
+
+.gaming-video-name-text {
+  font-family: 'Roboto';
+  color: #616e7c;
+  font-size: 13px;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.gaming-video-link {
+  text-decoration: none;
+}
