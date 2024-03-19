@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom'
-import Styled from 'styled-components'
 
+import {TitleText, NameText, BottomText, DotText} from '../StyledComponents'
 import './index.css'
 
 const HomeVideoDetails = props => {
@@ -21,41 +21,6 @@ const HomeVideoDetails = props => {
   const diffDays = Math.round(diffDate / (1000 * 3600 * 24))
   const diffYears = Math.round(diffDays / 365)
 
-  const TitleText = Styled.p`
-    font-family: 'Roboto';
-    color: ${darkTheme ? '#ffffff' : '#212121'};
-    font-size: 14px;
-    padding-top: 0px;
-    margin-top: 0px;
-    line-height: 20px;
-    margin-bottom: 8px;
-  `
-  const NameText = Styled.p`
-        font-family: "Roboto";
-        color: #616e7c;
-        font-size: 14px;
-        margin-top: 0px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        margin-bottom: 0px;
-   `
-  const BottomText = Styled.p`
-        font-family: "Roboto";
-        color: #616e7c;
-        font-size: 14px;
-        margin-top: 0px;
-        padding-top: 0px;
-        padding-right: 10px;
-   `
-  const DotText = Styled.p`
-        font-family: "Roboto";
-        color: #616e7c;
-        font-size: 25px;
-        margin-top: 0px;
-        padding-top: 0px;
-        padding-right: 10px;
-   `
-
   return (
     <li className="home-Videos-li-elem">
       <Link to={`/videos/:${id}`} className="home-Videos-link">
@@ -71,7 +36,9 @@ const HomeVideoDetails = props => {
             alt="channel logo"
           />
           <div>
-            <TitleText>{title}</TitleText>
+            <TitleText color={darkTheme ? '#ffffff' : '#212121'}>
+              {title}
+            </TitleText>
             <NameText>{channelName}</NameText>
             <div className="home-Videos-date-cont">
               <BottomText>{viewCount} views</BottomText>

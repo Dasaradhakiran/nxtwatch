@@ -1,9 +1,9 @@
 import {Component} from 'react'
-import styled from 'styled-components'
 import Cookies from 'js-cookie'
 import {SiYoutubegaming} from 'react-icons/si'
 
 import './index.css'
+import {GamingSubCont, GamingIconCont, GamingHead} from '../StyledComponents'
 
 import ThemeContext from '../../context/ThemeContext'
 import Header from '../Header'
@@ -62,24 +62,6 @@ class Gaming extends Component {
         {value => {
           const {darkTheme} = value
 
-          const GamingSubCont = styled.div`
-            display: flex;
-            align-items: center;
-            padding: 15px;
-            padding-left: 30px;
-            background-color: ${darkTheme ? '#181818' : '#ebebeb'};
-          `
-          const GamingIconCont = styled.div`
-            background-color: ${darkTheme ? '#0f0f0f' : '#d7dfe9'};
-            padding: 15px;
-            border-radius: 60px;
-            margin-right: 20px;
-          `
-          const GamingHead = styled.h1`
-            font-family: 'Roboto';
-            color: ${darkTheme ? '#ffffff' : '#000000'};
-            font-size: 28px;
-          `
           const gamingUi = () => (
             <>
               <ul className="gaming-ul-elem">
@@ -112,11 +94,13 @@ class Gaming extends Component {
                   }`}
                   data-testid="gaming"
                 >
-                  <GamingSubCont>
-                    <GamingIconCont>
+                  <GamingSubCont bgColor={darkTheme ? '#181818' : '#ebebeb'}>
+                    <GamingIconCont bgColor={darkTheme ? '#0f0f0f' : '#d7dfe9'}>
                       <SiYoutubegaming className="gaming-icon" />
                     </GamingIconCont>
-                    <GamingHead>Gaming</GamingHead>
+                    <GamingHead color={darkTheme ? '#ffffff' : '#000000'}>
+                      Gaming
+                    </GamingHead>
                   </GamingSubCont>
                   {gamingLoading ? <LoaderPage /> : renderGaming}
                 </div>

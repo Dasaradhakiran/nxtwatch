@@ -7,7 +7,7 @@ import {BiListPlus} from 'react-icons/bi'
 import './index.css'
 
 import ThemeContext from '../../context/ThemeContext'
-import {SideOptionText, SideLiElem} from './sideOptionsStyledComponents'
+import {SideOptionText, SideLiElem} from '../StyledComponents'
 
 const SideOptions = props => {
   const {uiPath} = props

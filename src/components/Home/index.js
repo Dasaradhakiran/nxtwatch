@@ -1,9 +1,15 @@
 import {Component} from 'react'
-import styled from 'styled-components'
 import {BsX} from 'react-icons/bs'
 import {IoMdSearch} from 'react-icons/io'
 import Cookies from 'js-cookie'
 
+import {
+  NoResultHead,
+  NoResultText,
+  HomeBannerCont,
+  BannerCloseButton,
+  SearchButton,
+} from '../StyledComponents'
 import './index.css'
 
 import ThemeContext from '../../context/ThemeContext'
@@ -93,39 +99,6 @@ class Home extends Component {
         {value => {
           const {darkTheme} = value
 
-          const SearchButton = styled.button`
-            background-color: #cccccc;
-            cursor: pointer;
-            outline: none;
-            border: 0px;
-            height: 25px;
-            width: 68px;
-          `
-          const HomeBannerCont = styled.div`
-            background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png');
-            background-size: cover;
-            padding: 15px;
-            padding-left: 28px;
-          `
-          const BannerCloseButton = styled.button`
-            background-color: transparent;
-            border: 0px;
-            cursor: pointer;
-            outline: none;
-          `
-          const NoResultHead = styled.h1`
-            font-family: 'Roboto';
-            color: ${darkTheme ? '#ffffff' : '#383838'};
-            font-size: 20px;
-          `
-          const NoResultText = styled.p`
-            font-family: 'Roboto';
-            color: #606060;
-            font-size: 15px;
-            margin-top: 0px;
-            margin-bottom: 5px;
-          `
-
           const renderHomePage = () => (
             <>
               <ul className="home-ul-cont">
@@ -147,7 +120,9 @@ class Home extends Component {
                 src="https://assets.ccbp.in/frontend/react-js/nxt-watch-no-search-results-img.png"
                 alt="no videos"
               />
-              <NoResultHead>No Search results found</NoResultHead>
+              <NoResultHead color={darkTheme ? '#ffffff' : '#383838'}>
+                No Search results found
+              </NoResultHead>
               <NoResultText>
                 Try different key words or remove search filter
               </NoResultText>

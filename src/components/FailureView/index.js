@@ -1,22 +1,10 @@
-import styled from 'styled-components'
+import {ErrorHead, ErrorText} from '../StyledComponents'
 
 import './index.css'
 
 const FailureView = props => {
   const {darkTheme, clickRetry} = props
 
-  const ErrorHead = styled.h1`
-    font-family: 'Roboto';
-    color: ${darkTheme ? '#ffffff' : '#383838'};
-    font-size: 20px;
-  `
-  const ErrorText = styled.p`
-    font-family: 'Roboto';
-    color: #606060;
-    font-size: 15px;
-    margin-top: 0px;
-    margin-bottom: 5px;
-  `
   return (
     <div className="error-cont">
       <img
@@ -28,7 +16,9 @@ const FailureView = props => {
         }
         alt="failure view"
       />
-      <ErrorHead>Oops! Something Went Wrong</ErrorHead>
+      <ErrorHead color={darkTheme ? '#ffffff' : '#383838'}>
+        Oops! Something Went Wrong
+      </ErrorHead>
       <ErrorText>
         We are having some trouble to complete your request.
       </ErrorText>

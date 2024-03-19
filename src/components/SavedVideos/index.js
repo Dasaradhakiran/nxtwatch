@@ -27,37 +27,39 @@ const SavedVideos = () => {
           align-items: center;
           padding: 15px;
           padding-left: 30px;
-          background-color: ${darkTheme ? '#181818' : '#ebebeb'};
+          background-color: ${props => props.bgColor};
         `
         const SavedVideosIconCont = styled.div`
-          background-color: ${darkTheme ? '#0f0f0f' : '#d7dfe9'};
+          background-color: ${props => props.bgColor};
           padding: 15px;
           border-radius: 60px;
           margin-right: 20px;
         `
         const SavedVideosHead = styled.h1`
           font-family: 'Roboto';
-          color: ${darkTheme ? '#ffffff' : '#000000'};
+          color: ${props => props.color};
           font-size: 28px;
         `
         const NoSavedVideosText = styled.p`
           font-family: 'Roboto';
-          color: ${darkTheme ? '#ebebeb' : '#212121'};
+          color: ${props => props.color};
           font-size: 15px;
           padding-top: 0px;
           margin-top: 0px;
         `
         const SavedVideosDarkCont = styled.div`
-          background-color: ${darkTheme && '#0f0f0f'};
+          background-color: ${props => props.bgColor};
         `
 
         const savedVideosUi = () => (
           <>
-            <SavedVideosSubCont>
-              <SavedVideosIconCont>
+            <SavedVideosSubCont bgColor={darkTheme ? '#181818' : '#ebebeb'}>
+              <SavedVideosIconCont bgColor={darkTheme ? '#0f0f0f' : '#d7dfe9'}>
                 <BiListPlus className="saved-videos-icon" />
               </SavedVideosIconCont>
-              <SavedVideosHead>Saved Videos</SavedVideosHead>
+              <SavedVideosHead color={darkTheme ? '#ffffff' : '#000000'}>
+                Saved Videos
+              </SavedVideosHead>
             </SavedVideosSubCont>
             <ul>
               {savedVideosList.map(eachItem => (
@@ -78,8 +80,10 @@ const SavedVideos = () => {
               src="https://assets.ccbp.in/frontend/react-js/nxt-watch-no-saved-videos-img.png"
               alt="no saved videos"
             />
-            <SavedVideosHead>No saved videos found</SavedVideosHead>
-            <NoSavedVideosText>
+            <SavedVideosHead color={darkTheme ? '#ffffff' : '#000000'}>
+              No saved videos found
+            </SavedVideosHead>
+            <NoSavedVideosText color={darkTheme ? '#ebebeb' : '#212121'}>
               You can save your videos while watching them
             </NoSavedVideosText>
           </div>
@@ -94,6 +98,7 @@ const SavedVideos = () => {
             <div className="saved-videos-cont">
               <SideOptions uiPath={location.pathname} />
               <SavedVideosDarkCont
+                bgColor={darkTheme && '#0f0f0f'}
                 className="saved-videos-main-cont"
                 data-testid="savedVideos"
               >

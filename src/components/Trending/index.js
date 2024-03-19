@@ -1,8 +1,12 @@
 import {Component} from 'react'
 import {HiFire} from 'react-icons/hi'
-import styled from 'styled-components'
 import Cookies from 'js-cookie'
 
+import {
+  TrendingSubCont,
+  TrendingIconCont,
+  TrendingHead,
+} from '../StyledComponents'
 import './index.css'
 
 import ThemeContext from '../../context/ThemeContext'
@@ -67,24 +71,6 @@ class Trending extends Component {
         {value => {
           const {darkTheme} = value
 
-          const TrendingSubCont = styled.div`
-            display: flex;
-            align-items: center;
-            padding: 15px;
-            padding-left: 30px;
-            background-color: ${darkTheme ? '#181818' : '#ebebeb'};
-          `
-          const TrendingIconCont = styled.div`
-            background-color: ${darkTheme ? '#0f0f0f' : '#d7dfe9'};
-            padding: 15px;
-            border-radius: 60px;
-            margin-right: 20px;
-          `
-          const TrendingHead = styled.h1`
-            font-family: 'Roboto';
-            color: ${darkTheme ? '#ffffff' : '#000000'};
-            font-size: 28px;
-          `
           const trendingUi = () => (
             <>
               <ul>
@@ -118,11 +104,15 @@ class Trending extends Component {
                   }`}
                   data-testid="trending"
                 >
-                  <TrendingSubCont>
-                    <TrendingIconCont>
+                  <TrendingSubCont bgColor={darkTheme ? '#181818' : '#ebebeb'}>
+                    <TrendingIconCont
+                      bgColor={darkTheme ? '#0f0f0f' : '#d7dfe9'}
+                    >
                       <HiFire className="trending-icon" />
                     </TrendingIconCont>
-                    <TrendingHead>Trending</TrendingHead>
+                    <TrendingHead color={darkTheme ? '#ffffff' : '#000000'}>
+                      Trending
+                    </TrendingHead>
                   </TrendingSubCont>
                   {trendingLoading ? <LoaderPage /> : trendingRender}
                 </div>
